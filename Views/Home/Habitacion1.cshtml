@@ -1,9 +1,15 @@
 @{
     ViewData["Title"] = "Habitacion N°1";
 }
-
 <div class="text-center">
-    <h1 class="display-4">Escape Room</h1>
+    <h1>@ViewData["Title"]</h1>
     <p>Después de días de exploración, finalmente llegas a un cuarto secreto. Mientras estás dentro, la puerta se desmorona detrás de ti y te das cuenta de que estás atrapado. Delante de ti hay una especie de candado hecho con un mecanismo de piedras que te permite ingresar x números del 1 al 10". Buscas detenidamente entre las rocas y encuentras el siguiente escrito.</p>
     <img src="/Imagenes/AcertijoN1.png" alt="">
 </div>
+<form method="post" action='@Url.Action("Habitacion","HomeController")'>
+    <p>Ingrese su respuesta: </p>
+    <input type="hidden" name="sala" value="1">
+    <input type="text" name="clave" min="1" max="10" required>
+    <input type="submit" value ="Enviar">
+</form>
+<button onclick="alert('Pista 1: Mirá las paredes...')"> Pista 1 </button>
