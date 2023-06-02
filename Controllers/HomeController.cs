@@ -13,10 +13,35 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    
+      public IActionResult Index()
     {
-        return View();
+           return View();
     }
+     public IActionResult Tutorial()
+    {
+           return View("Tutorial");
+    }
+
+    public IActionResult Comenzar()
+    {
+        return View("Habitacion1");
+    }
+
+    public IActionResult Habitacion(int sala, string clave)
+    {int Estado; clave = clave.ToUpper();
+        bool paso = Escape.ResolverSala(sala,clave);
+        if(paso){
+            Estado = Escape.GetEstadoJuego();
+            return View("Habitacion" + Estado.ToString());
+        }else{
+            ViewBag.Error = "La respuesta escrita fue incorrecta";
+            Estado = Escape.GetEstadoJuego();
+            return View("Habitacion" + Estado.ToString());
+        }
+    }
+    
+
 
     public IActionResult Privacy()
     {
