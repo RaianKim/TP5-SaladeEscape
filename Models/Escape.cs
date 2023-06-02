@@ -7,7 +7,8 @@ public static int GetEstadoJuego(){
 }
 
 public static bool ResolverSala(int Sala, string Incognita){
-bool Paso = incognitasSalas[Sala] == Incognita;
+int aux = Sala-1;
+bool Paso = incognitasSalas[aux] == Incognita;
 if(Paso){estadoJuego++;}
 return Paso;
 }
