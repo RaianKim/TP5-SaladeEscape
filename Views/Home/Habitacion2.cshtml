@@ -4,13 +4,13 @@
 <div class="text-center">
     <h1>@ViewData["Title"]</h1>
     <p>Al salir de la habitación, te encuentras en una sala con varias puertas cerradas. En la pared hay un mensaje que dice "Para encontrar la puerta correcta, debes responder a la siguiente pregunta: ¿Cuál es el nombre del dios maya de la muerte?". Tendrás que usar tus conocimientos sobre la cultura egipcia para responder correctamente y avanzar a la siguiente habitación.</p>
-    <img src="/Imagenes/AcertijoN1.png" alt="">
+    <img src="/Imagenes/AcertijoN2.png" alt="">
 </div>
 <form method="post" action='@Url.Action("Habitacion","Home")'>
     <p>Ingrese su respuesta: </p>
-    <input type="hidden" name="sala" value="1">
+    <input type="hidden" name="sala" value="2">
     <input type="text" name="clave" required>
     <input type="submit" value ="Validar">
 </form>
-<button onclick="alert('No pidas pistas es muy fácil')"> Pista 1 </button>
-<button onclick="alert('Dibu Martinez - Messi - Tagliafico')"> Pista 2 </button>
+<button onclick="alert('Lo vas a conocer si no contestas correctamente')"> Pista 1 </button>
+<button onclick="alert('Su primera letra es A')"> Pista 2 </button>

@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Habitacion N°4";
+}
+<div class="text-center">
+    <h1>@ViewData["Title"]</h1>
+    <p>Después de encontrar la siguiente pista, llegas a una habitación llena de trampas y obstáculos peligrosos. En la pared puedes ver el siguiente acertijo:</p>
+    <p>traduccion: Comenience desde la flecha verde y dibuje un camino para salida. Pase a través de orbes de colores en orden rojo, azul, rojo, azul, rojo, azul y asi sucesivamente(se puede atravesar por el mismo camino que recorriste)</p>
+    <img src="/Imagenes/AcertijoN4.jpeg" alt="">
+    
+</div>
+<form method="post" action='@Url.Action("Habitacion","Home")'>
+    <p>Ingrese su respuesta: </p>
+    <input type="hidden" name="sala" value="4">
+    <input type="text" name="clave" required>
+    <input type="submit" value ="Validar">
+</form>
+<button onclick="alert('Los primeros 5 pasos son: WWWDS')"> Pista 1 </button>
+<button onclick="alert('Los siguientes 5 pasos son: SDWWD')"> Pista 2 </button>

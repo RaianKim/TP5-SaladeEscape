@@ -29,13 +29,20 @@ public class HomeController : Controller
     }
 
     public IActionResult Habitacion(int sala, string clave)
-    {
-        int Estado; 
+    {   int Estado; 
         clave = clave.ToUpper();
         bool paso = Escape.ResolverSala(sala,clave);
         if(paso){
             Estado = Escape.GetEstadoJuego();
+            if(Estado != 5)
+            {
             return View("Habitacion" + Estado.ToString());
+            }
+            else
+            {
+                return View("Victoria");
+            }
+            
         }else{
             ViewBag.Error = "La respuesta escrita fue incorrecta";
             Estado = Escape.GetEstadoJuego();
