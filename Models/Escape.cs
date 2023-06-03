@@ -9,7 +9,7 @@ public static int GetEstadoJuego(){
 public static bool ResolverSala(int Sala, string Incognita){
 int aux = Sala-1;
 bool Paso = incognitasSalas[aux] == Incognita;
-if(Paso){estadoJuego++;}
+if(Paso){estadoJuego=Sala+1;}
 return Paso;
 }
 }

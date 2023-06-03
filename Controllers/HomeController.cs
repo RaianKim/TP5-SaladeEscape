@@ -49,9 +49,6 @@ public class HomeController : Controller
             return View("Habitacion" + Estado.ToString());
         }
     }
-    
-
-
     public IActionResult Privacy()
     {
         return View();
