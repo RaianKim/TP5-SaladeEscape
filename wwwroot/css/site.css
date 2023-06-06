@@ -49,4 +49,24 @@ input[type="button"]
   margin: 10px;
   padding: 10px;
 }
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 
+p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.creditos-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
