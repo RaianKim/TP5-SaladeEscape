@@ -43,13 +43,7 @@ public class HomeController : Controller
         bool paso = Escape.ResolverSala(sala,clave);
         if(paso){
             Estado = Escape.GetEstadoJuego();
-                    if(Estado == 1)
-         {
-            ViewBag.title = "Comenzar Juego";
-         }
-         else{
-            ViewBag.title = "Continuar Juego";
-         }
+
             if(Estado != 5)
             {
                 
@@ -57,7 +51,7 @@ public class HomeController : Controller
             }
             else
             {
-                return View("Victoria");
+                return View("Habitacion5");
             }
             
         }else{
