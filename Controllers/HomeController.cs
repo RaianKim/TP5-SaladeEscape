@@ -16,7 +16,7 @@ public class HomeController : Controller
     
       public IActionResult Index()
     {
-           return View();
+        return View();
     }
      public IActionResult Tutorial()
     {
@@ -25,17 +25,34 @@ public class HomeController : Controller
 
     public IActionResult Comenzar()
     {
-        return View("Habitacion1");
+        int Estado;
+        Estado = Escape.GetEstadoJuego();
+        return View("Habitacion" + Estado.ToString());
+}
+    
+
+    public IActionResult Creditos()
+    {
+           return View("Creditos");
     }
 
     public IActionResult Habitacion(int sala, string clave)
     {   int Estado; 
+    
         clave = clave.ToUpper();
         bool paso = Escape.ResolverSala(sala,clave);
         if(paso){
             Estado = Escape.GetEstadoJuego();
+                    if(Estado == 1)
+         {
+            ViewBag.title = "Comenzar Juego";
+         }
+         else{
+            ViewBag.title = "Continuar Juego";
+         }
             if(Estado != 5)
             {
+                
             return View("Habitacion" + Estado.ToString());
             }
             else
@@ -48,11 +65,11 @@ public class HomeController : Controller
             Estado = Escape.GetEstadoJuego();
             return View("Habitacion" + Estado.ToString());
         }
+
+
     }
-    public IActionResult Privacy()
-    {
-        return View();
-    }
+
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
