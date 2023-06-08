@@ -4,6 +4,7 @@
 <div class="text-center">
     <h1>@ViewData["Title"]</h1>
     <p class= timer>Temporizador: <span id="timer"></span></p>
+    <p>@ViewBag.error</p>
     <p>Después de días de exploración, finalmente llegas a un cuarto secreto. Mientras estás dentro, la puerta se desmorona detrás de ti y te das cuenta de que estás atrapado. Delante de ti hay una especie de candado hecho con un mecanismo de piedras que te permite ingresar x números del 1 al 10". Buscas detenidamente entre las rocas y encuentras el siguiente escrito.</p>
     <img src="/Imagenes/AcertijoN1.png" alt="">
 <form method="post" action='@Url.Action("Habitacion","Home")'>

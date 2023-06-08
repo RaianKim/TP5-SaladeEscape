@@ -46,7 +46,7 @@ public class HomeController : Controller
 
             if(Estado != 5)
             {
-                
+                ViewBag.Error = "Correcto!";
             return View("Habitacion" + Estado.ToString());
             }
             else
