@@ -6,7 +6,11 @@
     <p class= timer>Temporizador: <span id="timer"></span></p>
     <p>@ViewBag.error</p>
     <p>Al pasar por la puerta correcta, llegas a una habitación con varios objetos extraños. En la pared hay una nota que dice "Para encontrar la siguiente pista, debes resolver el acertijo". Tendrás que resolver un acertijo o rompecabezas para encontrar la siguiente pista que te lleve al tesoro.</p>
-    <img src="/Imagenes/AcertijoN3.png" alt="">
+    <p>_ _ _ _ _&nbsp;&nbsp; _ _ _ _ _ _ _</p>
+    <p>Deberas responder de la siguiente manera:</p>
+    <p>La primera letra de las primeras 5 palabras van en las primeras 5 incognitas </p>
+    <p>La ultima letra de las restantes 7 palabras van en las restantes 7 incognitas</p>
+    <iframe style="max-width:100%" src="https://wordwall.net/es/embed/28a56c13fb6d4a3f827dcdfc214474f9?themeId=1&templateId=38&fontStackId=12" width="500" height="380" frameborder="0" allowfullscreen></iframe>
 <form method="post" action='@Url.Action("Habitacion","Home")'>
     <p>Ingrese su respuesta: </p>
     <input type="hidden" name="sala" value="3">

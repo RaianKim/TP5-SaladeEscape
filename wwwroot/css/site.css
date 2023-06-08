@@ -27,6 +27,7 @@ body {
   scroll-behavior: smooth;
   white-space: nowrap;
   margin-left:25%;
+  margin-top: 60px;
 }
 
 .carousel-wrapper {
@@ -42,7 +43,7 @@ body {
 
 .carousel-slide img {
   height: auto;
-  width: 50%;
+  width: 75%;
 }
 input[type="button"]
 {
