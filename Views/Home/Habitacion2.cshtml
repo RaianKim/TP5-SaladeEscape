@@ -4,7 +4,7 @@
 <div class="text-center">
     <h1>@ViewData["Title"]</h1>
     <p class= timer>Temporizador: <span id="timer"></span></p>
-    <p>@ViewBag.error</p>
+    <h2>@ViewBag.error</h2>
     <p>Al salir de la habitación, te encuentras en una sala con varias puertas cerradas. En la pared hay un mensaje que dice "Para encontrar la puerta correcta, debes responder a la siguiente pregunta: ¿Cuál es el nombre del dios egipcio de la muerte?". Tendrás que usar tus conocimientos sobre la cultura egipcia para responder correctamente y avanzar a la siguiente habitación.</p>
     <img src="/Imagenes/AcertijoN2.png" alt="">
 <form method="post" action='@Url.Action("Habitacion","Home")'>
@@ -13,7 +13,7 @@
     <input type="text" name="clave" required>
     <input type="submit" value ="Validar">
 </form>
-<button onclick="alert('Lo vas a conocer si no contestas correctamente')"> Pista 1 </button>
-<button onclick="alert('Su primera letra es A')"> Pista 2 </button>
-<button onclick="alert('Anubis')"> Pista 3 </button>
+<button class="boton-pista" onclick="alert('Lo vas a conocer si no contestas correctamente')"> Pista 1 </button>
+<button class="boton-pista" onclick="alert('Su primera letra es A')"> Pista 2 </button>
+<button class="boton-pista" onclick="alert('Anubis')"> Pista 3 </button>
 </div>

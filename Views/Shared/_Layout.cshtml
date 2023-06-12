@@ -20,19 +20,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Menu</a>
+                            <button class="btnhead"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Menu</a></button>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Tutorial">Tutorial</a>
+                            <button class="btnhead"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Tutorial">Tutorial</a></button>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Comenzar">@((Escape.GetEstadoJuego()==1 ? "Comenzar" : "Continuar"))</a>
+                            <button class="btnhead"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Comenzar">@((Escape.GetEstadoJuego()==1 ? "Comenzar" : (Escape.GetEstadoJuego()!=5 ? "Continuar" : "Finalizado")))</a></button>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Creditos">Creditos</a>
+                            <button class="btnhead"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Creditos">Creditos</a></button>
                         </li>
                     </ul>
                 </div>

@@ -4,7 +4,7 @@
 <div class="text-center">
     <h1>@ViewData["Title"]</h1>
     <p class= timer>Temporizador: <span id="timer"></span></p>
-    <p>@ViewBag.error</p>
+    <h2>@ViewBag.error</h2>
     <p>Después de días de exploración, finalmente llegas a un cuarto secreto. Mientras estás dentro, la puerta se desmorona detrás de ti y te das cuenta de que estás atrapado. Delante de ti hay una especie de candado hecho con un mecanismo de piedras que te permite ingresar x números del 1 al 10". Buscas detenidamente entre las rocas y encuentras el siguiente escrito.</p>
     <img src="/Imagenes/AcertijoN1.png" alt="">
 <form method="post" action='@Url.Action("Habitacion","Home")'>
@@ -13,7 +13,7 @@
     <input type="text" name="clave" required>
     <input type="submit" value ="Validar">
 </form>
-<button onclick="alert('No pidas pistas es muy fácil')"> Pista 1 </button>
-<button onclick="alert('Dibu Martinez - Messi - Tagliafico')"> Pista 2 </button>
-<button onclick="alert('Respuesta = 10')"> Pista 3 </button>
+<button class="boton-pista" onclick="alert('No pidas pistas es muy fácil')"> Pista 1 </button>
+<button class="boton-pista" onclick="alert('Dibu Martinez - Messi - Tagliafico')"> Pista 2 </button>
+<button class="boton-pista" onclick="alert('Respuesta = 10')"> Pista 3 </button>
 </div>

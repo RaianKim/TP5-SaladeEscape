@@ -27,7 +27,15 @@ public class HomeController : Controller
     {
         int Estado;
         Estado = Escape.GetEstadoJuego();
-        return View("Habitacion" + Estado.ToString());
+        if(Estado != 5)
+        {
+        return View("Habitacion" + Estado.ToString());    
+        }
+        else
+        {
+            return View("Victoria");
+        }
+        
 }
     
 
@@ -46,12 +54,12 @@ public class HomeController : Controller
 
             if(Estado != 5)
             {
-                ViewBag.Error = "Correcto!";
+        
             return View("Habitacion" + Estado.ToString());
             }
             else
             {
-                return View("Habitacion5");
+                return View("Victoria");
             }
             
         }else{

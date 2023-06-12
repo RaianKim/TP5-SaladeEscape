@@ -16,9 +16,13 @@ html {
   position: relative;
   min-height: 100%;
 }
-
+a
+{
+  text-decoration: none;
+  color: inherit;
+}
 body {
-  margin-bottom: 60px;
+  background-color: rgb(255, 240, 156);
 }
 .carousel-container {
   width: 50%;
@@ -56,9 +60,12 @@ h1 {
   font-size: 50px;
   color: gold;
 }
-
-
-button
+h2
+{
+  font-size: 65px;
+  color: rgb(205, 50, 50);
+}
+.btnindex
 {
   background-color: beige;
   color: black;
@@ -67,15 +74,50 @@ button
   border-radius: 10px;
   padding: 10px 20px;
   margin: 20px;
+  margin-bottom: 70px;
+  font-family: 'Arial', sans-serif;
+  transition-duration: 0.4s;
+}
+.btnindex:hover
+ {
+  background-color: gold;
+  color: rgb(255, 255, 255);
+}
+input[type="submit"]
+{
+  background-color: beige;
+  color: black; 
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: 'Arial', sans-serif;
+  transition-duration: 0.4s;
+}
+input[type="submit"]:hover
+ {
+  background-color: gold;
+  color: rgb(255, 255, 255);
+}
+.boton-pista
+{
+  background-color: beige;
+  color: black;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20px;
+  margin-bottom: 70px;
   text-transform: uppercase;
   font-family: 'Arial', sans-serif;
+  transition-duration: 0.4s;
 }
 
 
-button:hover
+.boton-pista:hover
  {
   background-color: gold;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -85,18 +127,35 @@ p {
 }
 img
 {
-  width: 70%
+  width: 70%;
+  margin-bottom:10px;
+  
 }
-
+.imgCol
+{
+  width: 300px;
+}
+.imgInd
+{
+  width: 550px;
+}
 
 .creditos-img {
   width: 100%;
   max-width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+.colaborador
+{
+  padding:10px ;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid rgb(184, 184, 0);
+  margin: 40px;
+  background-color: #fffec4;
+  float: left;
 }
 
 .timer {
