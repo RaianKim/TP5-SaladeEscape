@@ -6,10 +6,7 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
-footer
-{
-  background-color: rgb(255, 255, 255);
-}
+
 a {
   color: #0077cc;
 }
@@ -55,7 +52,7 @@ button.accept-policy {
   margin-left: 10px;
   margin-right: 10px;
   border: none;
-  background-color: white;
+  background-color: rgb(255, 240, 156);
   color: black;
   transition-duration: 0.4s;
   
