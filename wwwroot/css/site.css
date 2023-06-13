@@ -134,18 +134,12 @@ img
 .imgCol
 {
   width: 300px;
+  border-radius: 50px;
 }
 .imgInd
 {
   width: 550px;
 }
-
-.creditos-img {
-  width: 100%;
-  max-width: 300px;
-  
-}
-
 
 .colaborador
 {
